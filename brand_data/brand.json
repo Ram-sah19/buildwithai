@@ -1,0 +1,135 @@
+{
+  "brand": "Feastables",
+  "source_url": "https://feastables.com/pages/our-cocoa-story",
+  "scraped_at": "2026-05-30",
+  "color_scheme": "light",
+  "mission": "Eradicate child labor in the chocolate industry. From chocolate bars to cups and beyond, every bite helps build a better future for the people behind it.",
+  "founder": "Jimmy Donaldson (MrBeast)",
+  "platform": "Shopify",
+  "colors": {
+    "primary": "#67318F",
+    "accent": "#15CCFF",
+    "black": "#000000",
+    "off_white": "#FAF9F5",
+    "blue_cloud": "#D6E4F0",
+    "white": "#FFFFFF",
+    "sidebar_bg": "#F5F5F5",
+    "error": "#FF0000",
+    "text_primary": "#000000",
+    "text_on_dark": "#FFFFFF"
+  },
+  "typography": {
+    "font_heading": "Kanit",
+    "font_body": "Kanit",
+    "font_display": "DrukWide",
+    "font_accent": "OneZeroSix",
+    "font_utility": "Sohne",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=Barlow+Condensed:ital,wght@0,800;1,800&display=swap",
+    "available_weights": {
+      "Kanit": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "Sohne": [200, 300, 400, 500, 600, 700, 800, 900],
+      "DrukWide": [500, 700, 800, 900],
+      "OneZeroSix": [800]
+    },
+    "usage": {
+      "hero_headings": "DrukWide 900 italic uppercase",
+      "nav_links": "Kanit 700 italic uppercase",
+      "product_titles": "Kanit 800 uppercase",
+      "body_text": "Kanit 400 / Sohne 400",
+      "announcement_bar": "Kanit 500 uppercase letter-spacing-1",
+      "cta_buttons": "Kanit 700 uppercase italic"
+    }
+  },
+  "spacing": {
+    "base_unit": 8,
+    "border_width": "4px",
+    "border_radius_card": "0.75rem",
+    "border_radius_modal": "0.75rem",
+    "nav_height": "75px",
+    "card_width_desktop": "200px",
+    "card_aspect_ratio": "1/0.75",
+    "shadow_offset_x": "5px",
+    "shadow_offset_y": "6px",
+    "shadow_color": "#000000",
+    "announcement_padding_mobile": "8px 32px",
+    "announcement_padding_desktop": "6px 32px"
+  },
+  "components": {
+    "announcement_bar": {
+      "background": "#67318F",
+      "text_color": "#FFFFFF",
+      "font": "Kanit",
+      "font_size_mobile": "14px",
+      "font_size_desktop": "16px",
+      "letter_spacing": "1px",
+      "text_transform": "uppercase"
+    },
+    "nav": {
+      "background": "blue-cloud",
+      "height": "75px",
+      "border_bottom": "4px solid #000000",
+      "position": "sticky",
+      "z_index": 20,
+      "hide_on_scroll": true,
+      "transition": "transform 500ms"
+    },
+    "card_product": {
+      "border": "4px solid #000000",
+      "border_radius": "0.75rem",
+      "background": "off-white",
+      "hover_shadow": "drop-shadow(5px 6px 0 #000000)",
+      "transition": "filter 100ms ease-in",
+      "image_container_bg": "blue-cloud",
+      "image_effect": "wave-edge-b cutout"
+    },
+    "button_primary": {
+      "background": "#15CCFF",
+      "text_color": "#000000",
+      "border": "4px solid #000000",
+      "text_transform": "uppercase",
+      "font": "Kanit 700 italic",
+      "label": "ADD TO BAG"
+    },
+    "button_nav": {
+      "background": "#000000",
+      "text_color": "#FFFFFF",
+      "font": "Kanit 700 italic uppercase"
+    },
+    "modal": {
+      "border_radius": "0.75rem",
+      "border": "4px solid #000000",
+      "background": "#FFFFFF",
+      "backdrop": "rgba(0,0,0,0.5)"
+    }
+  },
+  "visual_effects": [
+    "Hard offset drop-shadow (5px 6px 0 #000) — no blur, retro comic style",
+    "Paper texture repeating background (500x500px tile)",
+    "Wave-edge cutout on product card image containers",
+    "4px solid black borders on all major structural elements",
+    "Sticky nav that hides on scroll, reappears on focus/hover",
+    "Bold uppercase italic headings and nav",
+    "Black/50 semi-transparent backdrop for modals",
+    "Alpine.js reactive components (x-data, x-show, x-on:click)",
+    "Accordion menus with animated chevron icons"
+  ],
+  "layout": {
+    "grid_mobile": "3-column (grid-cols-3)",
+    "grid_products": "flexible wrap, 200px cards",
+    "nav_structure": ["SHOP", "About / Our Cocoa Story", "Cart/Bag", "Account", "Search"]
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/feastables",
+    "twitter": "https://twitter.com/feastables",
+    "tiktok": "https://www.tiktok.com/@feastables"
+  },
+  "contact": {
+    "address": "220 North Green Street Suite 100, Chicago, IL 60607"
+  },
+  "ecommerce": {
+    "platform": "Shopify",
+    "theme": "Feastables v2.0.0",
+    "currency": "USD",
+    "cart_cta": "ADD TO BAG"
+  }
+}

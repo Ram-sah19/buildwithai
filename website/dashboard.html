@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Dashboard — Feastables</title>
+  <meta name="description" content="Feastables brand design system — colors, typography, components, imagery and assets.">
+  <link rel="icon" href="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Lockup_Secondary__Square_32x32.png?v=1704497884" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar" id="sidebar" aria-label="Dashboard navigation">
+    <div class="sidebar-logo">
+      <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=360"
+           alt="Feastables" width="140">
+    </div>
+    <nav class="sidebar-nav" aria-label="Brand sections">
+      <a href="#colors"      class="sidebar-link sidebar-link--active" id="nav-colors">🎨 Colors</a>
+      <a href="#typography"  class="sidebar-link" id="nav-typography">🔤 Typography</a>
+      <a href="#components"  class="sidebar-link" id="nav-components">🔘 Components</a>
+      <a href="#images"      class="sidebar-link" id="nav-images">🖼️ Images</a>
+      <a href="#effects"     class="sidebar-link" id="nav-effects">✨ Effects</a>
+      <a href="#personality" class="sidebar-link" id="nav-personality">🧠 Personality</a>
+      <a href="#css"         class="sidebar-link" id="nav-css">💻 CSS Tokens</a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="index.html" class="sidebar-back">← VIEW WEBSITE</a>
+      <p class="sidebar-meta">Scraped: 2026-05-30<br>feastables.com</p>
+    </div>
+  </aside>
+
+  <!-- ── MAIN ── -->
+  <main class="main" id="main">
+
+    <!-- Header -->
+    <div class="dash-header">
+      <div>
+        <p class="dash-eyebrow">BRAND DESIGN SYSTEM</p>
+        <h1 class="dash-title">FEASTABLES</h1>
+        <p class="dash-sub">Extracted from <code>feastables.com/pages/our-cocoa-story</code></p>
+      </div>
+      <div class="dash-header-badges">
+        <span class="badge badge--purple">SHOPIFY</span>
+        <span class="badge badge--cyan">GEN Z</span>
+        <span class="badge badge--black">MRBEAST</span>
+      </div>
+    </div>
+
+    <!-- ── COLORS ── -->
+    <section class="dash-section" id="colors" aria-labelledby="colors-heading">
+      <h2 class="dash-section-title" id="colors-heading">🎨 Color Palette</h2>
+      <div class="color-grid">
+        <div class="color-swatch" data-copy="#67318F">
+          <div class="swatch-block" style="background:#67318F;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">BRAND PURPLE</p>
+            <p class="swatch-hex">#67318F</p>
+            <p class="swatch-role">Primary · Announcement bar</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#15CCFF">
+          <div class="swatch-block" style="background:#15CCFF;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">ACCENT CYAN</p>
+            <p class="swatch-hex">#15CCFF</p>
+            <p class="swatch-role">CTA buttons · Highlights</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#000000">
+          <div class="swatch-block" style="background:#000000;"></div>
+          <div class="swatch-info" style="color:#fff;">
+            <p class="swatch-name">BLACK</p>
+            <p class="swatch-hex">#000000</p>
+            <p class="swatch-role">Borders · Text · Nav</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#FAF9F5">
+          <div class="swatch-block" style="background:#FAF9F5; border:2px solid #e0ded8;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">OFF-WHITE</p>
+            <p class="swatch-hex">#FAF9F5</p>
+            <p class="swatch-role">Cards · Page background</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#D6E4F0">
+          <div class="swatch-block" style="background:#D6E4F0;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">BLUE CLOUD</p>
+            <p class="swatch-hex">#D6E4F0</p>
+            <p class="swatch-role">Nav bg · Product card img</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#FFFFFF">
+          <div class="swatch-block" style="background:#fff; border:2px solid #e0ded8;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">WHITE</p>
+            <p class="swatch-hex">#FFFFFF</p>
+            <p class="swatch-role">Modals · Checkout bg</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#F5F5F5">
+          <div class="swatch-block" style="background:#F5F5F5; border:2px solid #e0ded8;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">SIDEBAR GRAY</p>
+            <p class="swatch-hex">#F5F5F5</p>
+            <p class="swatch-role">Checkout sidebar</p>
+          </div>
+        </div>
+        <div class="color-swatch" data-copy="#FF0000">
+          <div class="swatch-block" style="background:#FF0000;"></div>
+          <div class="swatch-info" style="color:#fff;">
+            <p class="swatch-name">ERROR RED</p>
+            <p class="swatch-hex">#FF0000</p>
+            <p class="swatch-role">Checkout errors</p>
+          </div>
+        </div>
+      </div>
+      <p class="copy-hint">↑ Click any swatch to copy hex code</p>
+      <div class="copy-toast" id="copy-toast" aria-live="polite">Copied!</div>
+    </section>
+
+    <!-- ── TYPOGRAPHY ── -->
+    <section class="dash-section" id="typography" aria-labelledby="type-heading">
+      <h2 class="dash-section-title" id="type-heading">🔤 Typography</h2>
+
+      <div class="type-card">
+        <div class="type-label">DISPLAY / HERO — Barlow Condensed (DrukWide substitute)</div>
+        <div class="type-sample type-sample--display">COCOA STORY</div>
+        <div class="type-meta">Barlow Condensed · 900 · Italic · Uppercase · Line-height 0.88</div>
+        <div class="type-usage">Used for: hero titles, section headings, mission statements</div>
+      </div>
+
+      <div class="type-card">
+        <div class="type-label">HEADING — Kanit Bold Italic</div>
+        <div class="type-sample type-sample--heading">OUR MISSION IS BOLD</div>
+        <div class="type-meta">Kanit · 700–900 · Italic · Uppercase · Letter-spacing 1px</div>
+        <div class="type-usage">Used for: nav links, CTA buttons, product titles, announcement bar</div>
+      </div>
+
+      <div class="type-card">
+        <div class="type-label">BODY — Kanit Regular</div>
+        <div class="type-sample type-sample--body">Every bite helps build a better future for the people behind it. From chocolate bars to cups and beyond, Feastables is still bringing the fun — now with bolder flavor and a bigger purpose.</div>
+        <div class="type-meta">Kanit · 400 · Normal · Line-height 1.7</div>
+        <div class="type-usage">Used for: body paragraphs, descriptions, footer links</div>
+      </div>
+
+      <div class="type-card">
+        <div class="type-label">LABEL / EYEBROW — Kanit Medium</div>
+        <div class="type-sample type-sample--label">WHO WE ARE  ·  ETHICALLY SOURCED  ·  EST. 2022</div>
+        <div class="type-meta">Kanit · 500–700 · Uppercase · Letter-spacing 3px · Font-size 11–13px</div>
+        <div class="type-usage">Used for: section labels, badges, eyebrows, categories</div>
+      </div>
+
+      <div class="font-table">
+        <h3 class="font-table-title">Font Weights Available</h3>
+        <table aria-label="Font weights table">
+          <thead>
+            <tr><th>Family</th><th>Weights</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kanit</td><td>100–900 (+ italics)</td><td>Primary font — navigation, body, CTAs. Available on Google Fonts.</td></tr>
+            <tr><td>Sohne</td><td>200–900 (+ italics)</td><td>Utility/body. Commercial license. Substitute: Inter, DM Sans.</td></tr>
+            <tr><td>DrukWide</td><td>500, 700, 800, 900</td><td>Display headings. Commercial (Typotheque). Substitute: Barlow Condensed ExtraBold.</td></tr>
+            <tr><td>OneZeroSix</td><td>800 only</td><td>Accent display. Self-hosted CDN only.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ── COMPONENTS ── -->
+    <section class="dash-section" id="components" aria-labelledby="comp-heading">
+      <h2 class="dash-section-title" id="comp-heading">🔘 UI Components</h2>
+
+      <div class="comp-grid">
+        <!-- Buttons -->
+        <div class="comp-card" aria-label="Primary button component">
+          <h3 class="comp-title">PRIMARY BUTTON (CTA)</h3>
+          <div class="comp-preview">
+            <button class="demo-btn demo-btn--primary">ADD TO BAG</button>
+          </div>
+          <div class="comp-spec">
+            background: #15CCFF · border: 4px solid #000<br>
+            font: Kanit 700 italic uppercase · padding: 12px 24px<br>
+            hover: drop-shadow(3px 4px 0 #000)
+          </div>
+        </div>
+
+        <div class="comp-card" aria-label="Brand purple button component">
+          <h3 class="comp-title">BRAND BUTTON (Purple)</h3>
+          <div class="comp-preview">
+            <button class="demo-btn demo-btn--brand">SHOP NOW</button>
+          </div>
+          <div class="comp-spec">
+            background: #67318F · color: #fff · border: 4px solid #000<br>
+            font: Kanit 700 italic uppercase
+          </div>
+        </div>
+
+        <div class="comp-card" aria-label="Announcement bar component">
+          <h3 class="comp-title">ANNOUNCEMENT BAR</h3>
+          <div class="comp-preview">
+            <div class="demo-announcement">SPEND $75, GET FREE CHOC MILK! ✦</div>
+          </div>
+          <div class="comp-spec">
+            background: #67318F · color: #fff<br>
+            font: Kanit 500 uppercase · letter-spacing: 1px<br>
+            padding: 8px 32px · font-size: 14–16px
+          </div>
+        </div>
+
+        <div class="comp-card" aria-label="Product card component">
+          <h3 class="comp-title">PRODUCT CARD</h3>
+          <div class="comp-preview">
+            <div class="demo-card">
+              <div class="demo-card-img">
+                <img src="https://feastables.com/cdn/shop/files/Chocolate_Milk_60g.png?v=1778265549&width=120"
+                     alt="Milk Chocolate" loading="lazy">
+              </div>
+              <div class="demo-card-body">
+                <p class="demo-card-title">MILK CHOCOLATE</p>
+                <p class="demo-card-price">$2.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="comp-spec">
+            border: 4px solid #000 · border-radius: 0.75rem<br>
+            background: #FAF9F5 · image-bg: #D6E4F0<br>
+            hover: drop-shadow(5px 6px 0 #000) · 100ms ease-in
+          </div>
+        </div>
+
+        <div class="comp-card" aria-label="Announcement bar modal component">
+          <h3 class="comp-title">MODAL</h3>
+          <div class="comp-preview">
+            <div class="demo-modal">
+              <p class="demo-modal-title">FREE CHOC MILK OFFER</p>
+              <p>Add $75 or more to qualify for the free gift.</p>
+              <button class="demo-btn demo-btn--primary" style="margin-top:12px;font-size:11px;padding:8px 16px;">GOT IT</button>
+            </div>
+          </div>
+          <div class="comp-spec">
+            background: #fff · border: 4px solid #000 · border-radius: 0.75rem<br>
+            backdrop: rgba(0,0,0,0.5)
+          </div>
+        </div>
+
+        <div class="comp-card" aria-label="Navigation header component">
+          <h3 class="comp-title">NAV HEADER</h3>
+          <div class="comp-preview">
+            <div class="demo-nav">
+              <span class="demo-nav-logo">FEASTABLES</span>
+              <span class="demo-nav-link">SHOP ▾</span>
+              <span class="demo-nav-link demo-nav-link--active">OUR STORY</span>
+            </div>
+          </div>
+          <div class="comp-spec">
+            background: #D6E4F0 · height: 75px · border-bottom: 4px solid #000<br>
+            position: sticky top-0 · hides on scroll · 500ms transition
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── IMAGES ── -->
+    <section class="dash-section" id="images" aria-labelledby="img-heading">
+      <h2 class="dash-section-title" id="img-heading">🖼️ Brand Images</h2>
+
+      <div class="img-group">
+        <h3 class="img-group-title">LOGOS</h3>
+        <div class="img-grid">
+          <div class="img-asset">
+            <div class="img-preview img-preview--light">
+              <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=360"
+                   alt="Feastables Wordmark" loading="lazy">
+            </div>
+            <p class="img-label">WORDMARK (Nav)</p>
+            <p class="img-desc">PNG · 180px wide · Navigation header</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--dark">
+              <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=360"
+                   alt="Feastables Wordmark on dark" loading="lazy">
+            </div>
+            <p class="img-label">WORDMARK (on dark)</p>
+            <p class="img-desc">PNG · White readable on dark backgrounds</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--light img-preview--sm">
+              <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Lockup_Secondary__Square_32x32.png?v=1704497884"
+                   alt="Feastables square favicon" loading="lazy">
+            </div>
+            <p class="img-label">FAVICON / ICON</p>
+            <p class="img-desc">PNG · 32×32px · Browser, app icon</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-group">
+        <h3 class="img-group-title">HERO IMAGES</h3>
+        <div class="img-hero-preview">
+          <img src="https://feastables.com/cdn/shop/files/aboutus-hero-web.jpg?v=1751051983&width=1536"
+               alt="Feastables Our Cocoa Story hero" loading="lazy" class="img-hero-full">
+          <div class="img-hero-meta">
+            <p><strong>Our Cocoa Story Hero</strong></p>
+            <p>JPG · 1536px wide · Used as OG image + page hero</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-group">
+        <h3 class="img-group-title">PRODUCT IMAGES</h3>
+        <div class="img-grid img-grid--products">
+          <div class="img-asset">
+            <div class="img-preview img-preview--blue">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_MarioGalaxyCocoaCrunch_60g.png?v=1776111170&width=200" alt="Mario Galaxy Cocoa Crunch" loading="lazy">
+            </div>
+            <p class="img-label">MARIO GALAXY</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--blue">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_CookiesCreme_60g_2.5.png?v=1778269980&width=200" alt="Cookies & Creme" loading="lazy">
+            </div>
+            <p class="img-label">COOKIES & CREME</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--blue">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_Caramel_60g.png?v=1758826810&width=200" alt="Caramel" loading="lazy">
+            </div>
+            <p class="img-label">CARAMEL</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--blue">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_Milk_60g.png?v=1778265549&width=200" alt="Milk Chocolate" loading="lazy">
+            </div>
+            <p class="img-label">MILK CHOCOLATE</p>
+          </div>
+          <div class="img-asset">
+            <div class="img-preview img-preview--blue">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_MilkCrunch_60g_2.5.png?v=1778268968&width=200" alt="Milk Crunch" loading="lazy">
+            </div>
+            <p class="img-label">MILK CRUNCH</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-group">
+        <h3 class="img-group-title">BACKGROUND TEXTURE</h3>
+        <div class="texture-preview">
+          <p class="texture-label">Paper Texture (500×500px tile)</p>
+        </div>
+        <p class="img-desc" style="margin-top:8px;">
+          <code>background-image: url('https://feastables.com/cdn/shop/files/PaperTextureBg.jpg?v=1706141021&width=500')</code><br>
+          <code>background-size: 500px 500px; background-repeat: repeat;</code>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── EFFECTS ── -->
+    <section class="dash-section" id="effects" aria-labelledby="fx-heading">
+      <h2 class="dash-section-title" id="fx-heading">✨ Visual Effects & Patterns</h2>
+      <div class="effects-grid">
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-shadow-demo">HOVER ME</div>
+          </div>
+          <h3 class="effect-title">Hard Offset Shadow</h3>
+          <p class="effect-desc"><code>drop-shadow(5px 6px 0 #000)</code><br>No blur. Solid offset. Retro comic / pixel-art style.</p>
+        </div>
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-border-demo">4PX SOLID BLACK</div>
+          </div>
+          <h3 class="effect-title">Thick Black Borders</h3>
+          <p class="effect-desc"><code>border: 4px solid #000000</code><br>Applied to all cards, buttons, modals, nav. Creates bold graphic-novel outlines.</p>
+        </div>
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-texture-demo">PAPER TEXTURE</div>
+          </div>
+          <h3 class="effect-title">Paper Background Texture</h3>
+          <p class="effect-desc">500×500px repeating tile gives a tactile, physical-media feel. Applied sitewide.</p>
+        </div>
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-type-demo">UPPERCASE ITALIC</div>
+          </div>
+          <h3 class="effect-title">Bold Uppercase Italic Text</h3>
+          <p class="effect-desc"><code>font-style: italic; text-transform: uppercase; font-weight: 700+</code><br>Used consistently across nav, headings, CTAs for high-energy youthful feel.</p>
+        </div>
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-nav-demo">
+              <div class="effect-nav-bar">NAV BAR</div>
+              <div class="effect-nav-arrow">↑ hides on scroll</div>
+            </div>
+          </div>
+          <h3 class="effect-title">Scroll-Hide Nav</h3>
+          <p class="effect-desc"><code>transform: translateY(-100%)</code> on scroll down.<br>Reappears on scroll up or focus. <code>transition: 500ms</code></p>
+        </div>
+        <div class="effect-card" tabindex="0">
+          <div class="effect-demo">
+            <div class="effect-scale-demo">CARD IMAGE ↗</div>
+          </div>
+          <h3 class="effect-title">Product Image Hover Scale</h3>
+          <p class="effect-desc"><code>transform: scale(1.05) rotate(-2deg)</code><br>Playful tilt+zoom on product images on hover.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PERSONALITY ── -->
+    <section class="dash-section" id="personality" aria-labelledby="personality-heading">
+      <h2 class="dash-section-title" id="personality-heading">🧠 Brand Personality</h2>
+      <div class="personality-grid">
+        <div class="personality-card personality-card--purple">
+          <div class="personality-icon">🎭</div>
+          <h3>TONE</h3>
+          <p>Playful · Bold · Youthful · Direct · Energetic</p>
+        </div>
+        <div class="personality-card personality-card--cyan">
+          <div class="personality-icon">⚡</div>
+          <h3>ENERGY</h3>
+          <p>High energy — uppercase, italic, exclamation points, fast motion</p>
+        </div>
+        <div class="personality-card personality-card--black">
+          <div class="personality-icon">🎨</div>
+          <h3>VISUAL STYLE</h3>
+          <p>Retro-comic / graphic novel meets modern e-commerce. Bold outlines, hard shadows, paper texture.</p>
+        </div>
+        <div class="personality-card personality-card--off">
+          <div class="personality-icon">🌍</div>
+          <h3>MISSION</h3>
+          <p>Purpose-driven: eradicate child labor in the chocolate industry. Every purchase matters.</p>
+        </div>
+        <div class="personality-card personality-card--blue">
+          <div class="personality-icon">👥</div>
+          <h3>AUDIENCE</h3>
+          <p>Gen Z & young millennials · MrBeast fans · Snack enthusiasts · Social-media-native</p>
+        </div>
+        <div class="personality-card personality-card--off">
+          <div class="personality-icon">📍</div>
+          <h3>IDENTITY</h3>
+          <p>Founded by MrBeast (Jimmy Donaldson) · Chicago, IL · Instagram, TikTok, Twitter @feastables</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CSS TOKENS ── -->
+    <section class="dash-section" id="css" aria-labelledby="css-heading">
+      <h2 class="dash-section-title" id="css-heading">💻 CSS Design Tokens</h2>
+      <p class="css-intro">Copy these into your project's <code>:root {}</code> to match the Feastables brand.</p>
+      <div class="code-block-wrapper">
+        <button class="code-copy-btn" id="css-copy-btn" aria-label="Copy CSS tokens">COPY</button>
+        <pre class="code-block" id="css-code"><code>:root {
+  /* Colors */
+  --color-primary:       #67318F;
+  --color-accent:        #15CCFF;
+  --color-black:         #000000;
+  --color-off-white:     #FAF9F5;
+  --color-blue-cloud:    #D6E4F0;
+  --color-white:         #FFFFFF;
+  --color-error:         #FF0000;
+  --color-text:          #000000;
+  --color-text-inv:      #FFFFFF;
+
+  /* Typography */
+  --font-sans:           'Kanit', sans-serif;
+  --font-display:        'Barlow Condensed', 'Kanit', sans-serif;
+
+  /* Borders */
+  --border:              4px solid #000000;
+  --border-thin:         2px solid #000000;
+  --border-radius:       0.75rem;
+  --border-radius-sm:    0.5rem;
+
+  /* Shadows (hard offset, no blur) */
+  --shadow:              5px 6px 0 0 #000000;
+  --shadow-sm:           3px 4px 0 0 #000000;
+  --shadow-lg:           8px 10px 0 0 #000000;
+
+  /* Layout */
+  --nav-height:          75px;
+
+  /* Transitions */
+  --transition:          100ms ease-in;
+  --transition-nav:      500ms;
+
+  /* Background texture */
+  --bg-texture: url('https://feastables.com/cdn/shop/files/PaperTextureBg.jpg?v=1706141021&width=500');
+  --bg-texture-size: 500px 500px;
+}</code></pre>
+      </div>
+
+      <div class="code-block-wrapper" style="margin-top:24px;">
+        <p class="css-intro">Google Fonts import:</p>
+        <pre class="code-block"><code>&lt;link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;0,900;1,700;1,900&amp;family=Barlow+Condensed:ital,wght@1,800&amp;display=swap" rel="stylesheet"&gt;</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

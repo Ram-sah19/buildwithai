@@ -1,0 +1,90 @@
+{
+  "source": "https://feastables.com/pages/our-cocoa-story",
+  "scraped_at": "2026-05-30",
+  "logos": [
+    {
+      "name": "Wordmark (nav)",
+      "url": "https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=180",
+      "width": 180,
+      "format": "PNG",
+      "usage": "Main navigation header"
+    },
+    {
+      "name": "Logo 2024 Full",
+      "url": "https://feastables.com/cdn/shop/files/Feastables_Logo_2024.png?v=1696022323&width=500",
+      "width": 500,
+      "height": 173,
+      "format": "PNG",
+      "usage": "General brand usage"
+    },
+    {
+      "name": "Favicon / Square Logo (32x32)",
+      "url": "https://feastables.com/cdn/shop/files/Feastables_Rebrand_Lockup_Secondary__Square_32x32.png?v=1704497884",
+      "width": 32,
+      "height": 32,
+      "format": "PNG",
+      "usage": "Browser favicon, app icon"
+    },
+    {
+      "name": "Checkout Logo",
+      "url": "https://feastables.com/cdn/shop/files/Feastables_Logo_eef21c4d-5a99-4664-a3a1-f5ee2c5e8be9.png?v=1706906715",
+      "format": "PNG",
+      "usage": "Checkout page, centered, medium size"
+    }
+  ],
+  "hero_images": [
+    {
+      "name": "About Us / Our Cocoa Story Hero",
+      "url": "https://feastables.com/cdn/shop/files/aboutus-hero-web.jpg?v=1751051983&width=1536",
+      "width": 1536,
+      "format": "JPG",
+      "usage": "OG image, hero section background"
+    }
+  ],
+  "textures": [
+    {
+      "name": "Paper Texture Background",
+      "url": "https://feastables.com/cdn/shop/files/PaperTextureBg.jpg?v=1706141021&width=500",
+      "tile_size": "500px x 500px",
+      "usage": "Full-page repeating background (body, .page-bg)"
+    }
+  ],
+  "product_images": [
+    {
+      "name": "Mario Galaxy Cocoa Crunch (60g)",
+      "url": "https://feastables.com/cdn/shop/files/Chocolate_MarioGalaxyCocoaCrunch_60g.png?v=1776111170",
+      "format": "PNG",
+      "product_url": "/products/mario-galaxy-cocoa-crunch-chocolate"
+    },
+    {
+      "name": "Cookies & Creme King Size (60g)",
+      "url": "https://feastables.com/cdn/shop/files/Chocolate_CookiesCreme_60g_2.5.png?v=1778269980",
+      "format": "PNG",
+      "product_url": "/products/cookies-creme"
+    },
+    {
+      "name": "Caramel Chocolate King Size (60g)",
+      "url": "https://feastables.com/cdn/shop/files/Chocolate_Caramel_60g.png?v=1758826810",
+      "format": "PNG",
+      "product_url": "/products/caramel-chocolate"
+    },
+    {
+      "name": "Milk Chocolate King Size (60g)",
+      "url": "https://feastables.com/cdn/shop/files/Chocolate_Milk_60g.png?v=1778265549",
+      "format": "PNG",
+      "product_url": "/products/milk-chocolate"
+    },
+    {
+      "name": "Milk Crunch Chocolate (60g)",
+      "url": "https://feastables.com/cdn/shop/files/Chocolate_MilkCrunch_60g_2.5.png?v=1778268968",
+      "format": "PNG",
+      "product_url": "/products/milk-crunch-chocolate"
+    }
+  ],
+  "og_metadata": {
+    "title": "Our Cocoa Story",
+    "description": "Feastables is still bringing the fun, now with bolder flavor and a bigger purpose. From chocolate bars to cups and beyond, every bite helps build a better future for the people behind it.",
+    "image": "https://feastables.com/cdn/shop/files/aboutus-hero-web.jpg?v=1751051983&width=1536",
+    "url": "https://feastables.com/pages/our-cocoa-story"
+  }
+}

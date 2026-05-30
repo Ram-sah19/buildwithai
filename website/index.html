@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Cocoa Story — Feastables</title>
+  <meta name="description" content="Feastables is still bringing the fun, now with bolder flavor and a bigger purpose. From chocolate bars to cups and beyond, every bite helps build a better future for the people behind it.">
+  <meta property="og:title" content="Our Cocoa Story — Feastables">
+  <meta property="og:description" content="Every bite helps build a better future for the people behind it.">
+  <meta property="og:image" content="https://feastables.com/cdn/shop/files/aboutus-hero-web.jpg?v=1751051983&width=1536">
+
+  <link rel="icon" href="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Lockup_Secondary__Square_32x32.png?v=1704497884" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── ANNOUNCEMENT BAR ── -->
+  <div class="announcement-bar" id="announcement-bar">
+    <a href="#" class="announcement-link" id="announcement-trigger">SPEND $75, GET FREE CHOC MILK! ✦</a>
+  </div>
+
+  <!-- ANNOUNCEMENT MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Offer details">
+      <h3 class="modal-title">FREE CHOC MILK OFFER</h3>
+      <p>Add $75 or more of Feastables snacks to your cart to be eligible for our free gift with purchase.<br><br>The free gift is a 6 Pack of Chocolate Milk cartons (8oz). You must claim the offer in your cart before checkout.</p>
+      <p class="modal-expiry">Valid until 5/31/26</p>
+      <button class="btn-primary modal-close" id="modal-close">GOT IT</button>
+    </div>
+  </div>
+
+  <!-- ── NAV ── -->
+  <header class="nav" id="main-nav">
+    <div class="nav-inner">
+      <!-- Mobile: hamburger -->
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <a href="/" class="nav-logo" aria-label="Feastables home">
+        <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=360"
+             alt="Feastables Wordmark" width="180" height="62">
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <div class="nav-dropdown" id="shop-dropdown">
+          <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true" id="shop-btn">
+            SHOP <span class="chevron">▾</span>
+          </button>
+          <div class="dropdown-panel" id="shop-panel" aria-hidden="true">
+            <div class="dropdown-inner">
+              <div class="dropdown-section">
+                <h4 class="dropdown-label">CHOCOLATE</h4>
+                <div class="dropdown-products">
+                  <a href="#" class="dropdown-product">
+                    <img src="https://feastables.com/cdn/shop/files/Chocolate_MarioGalaxyCocoaCrunch_60g.png?v=1776111170&width=120" alt="Mario Galaxy" loading="lazy">
+                    <span>MARIO GALAXY</span>
+                  </a>
+                  <a href="#" class="dropdown-product">
+                    <img src="https://feastables.com/cdn/shop/files/Chocolate_CookiesCreme_60g_2.5.png?v=1778269980&width=120" alt="Cookies & Creme" loading="lazy">
+                    <span>COOKIES & CREME</span>
+                  </a>
+                  <a href="#" class="dropdown-product">
+                    <img src="https://feastables.com/cdn/shop/files/Chocolate_Caramel_60g.png?v=1758826810&width=120" alt="Caramel" loading="lazy">
+                    <span>CARAMEL</span>
+                  </a>
+                  <a href="#" class="dropdown-product">
+                    <img src="https://feastables.com/cdn/shop/files/Chocolate_Milk_60g.png?v=1778265549&width=120" alt="Milk Chocolate" loading="lazy">
+                    <span>MILK CHOCOLATE</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#story" class="nav-link nav-link--active">OUR STORY</a>
+        <a href="#mission" class="nav-link">MISSION</a>
+        <a href="dashboard.html" class="nav-link">BRAND DASHBOARD</a>
+      </nav>
+
+      <!-- Cart -->
+      <button class="nav-cart" aria-label="Open bag">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M4 4h3l2 9h12l2-9h3" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="10" cy="22" r="2" fill="#000"/>
+          <circle cx="18" cy="22" r="2" fill="#000"/>
+        </svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <button class="mobile-drawer-item mobile-drawer-item--black" id="mobile-shop-toggle">
+        SHOP <span class="chevron">▾</span>
+      </button>
+      <div class="mobile-submenu" id="mobile-shop-submenu" hidden>
+        <a href="#" class="mobile-drawer-item mobile-drawer-item--sub">CHOCOLATE</a>
+        <a href="#" class="mobile-drawer-item mobile-drawer-item--sub">SNACKS</a>
+        <a href="#" class="mobile-drawer-item mobile-drawer-item--sub">BUNDLES</a>
+      </div>
+      <a href="#story" class="mobile-drawer-item" id="mobile-story">OUR STORY</a>
+      <a href="#mission" class="mobile-drawer-item" id="mobile-mission">MISSION</a>
+      <a href="dashboard.html" class="mobile-drawer-item">BRAND DASHBOARD</a>
+    </nav>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <div class="hero-bg">
+      <img
+        src="https://feastables.com/cdn/shop/files/aboutus-hero-web.jpg?v=1751051983&width=1536"
+        alt="Feastables Our Cocoa Story hero"
+        class="hero-img"
+        loading="eager"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">THE CHOCOLATE WITH A MISSION</p>
+      <h1 class="hero-title">OUR<br><em>COCOA</em><br>STORY</h1>
+      <p class="hero-sub">Every bite helps build a better future<br>for the people behind it.</p>
+      <div class="hero-ctas">
+        <a href="#story" class="btn-primary">READ THE STORY</a>
+        <a href="#products" class="btn-outline">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── STORY SECTION ── -->
+  <section class="section story-section" id="story" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text" data-animate="slide-up">
+          <span class="section-label">WHO WE ARE</span>
+          <h2 class="section-title" id="story-heading">TOGETHER WITH MRBEAST</h2>
+          <p class="story-body">
+            Together with MrBeast, we created delicious snacks with ingredients you can trust.
+            Now, at the core of Feastables is a new mission: <strong>eradicate child labor in the chocolate industry.</strong>
+          </p>
+          <p class="story-body">
+            From chocolate bars to cups and beyond, every bite helps build a better future
+            for the people behind it. We believe chocolate should taste extraordinary
+            <em>and</em> do extraordinary good.
+          </p>
+          <a href="#mission" class="btn-primary" style="display:inline-block;margin-top:24px;">
+            OUR MISSION →
+          </a>
+        </div>
+        <div class="story-visual" data-animate="slide-up" data-delay="150">
+          <div class="story-card-wrapper">
+            <div class="story-stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">ETHICALLY SOURCED COCOA</div>
+            </div>
+            <div class="story-stat-card story-stat-card--accent">
+              <div class="stat-number">0</div>
+              <div class="stat-label">TOLERANCE FOR CHILD LABOR</div>
+            </div>
+            <div class="story-stat-card story-stat-card--dark">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">BETTER FUTURES BUILT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MISSION STRIP ── -->
+  <section class="mission-strip" id="mission" aria-label="Mission">
+    <div class="mission-inner">
+      <h2 class="mission-title">ERADICATE<br><em>CHILD LABOR</em><br>IN CHOCOLATE</h2>
+      <p class="mission-body">
+        The cocoa industry has a dark secret. Child labor affects an estimated 1.56 million
+        children in West Africa alone. Feastables is fighting to change that — one bar at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="section" id="products" aria-labelledby="products-heading">
+    <div class="container">
+      <span class="section-label">OUR CHOCOLATE</span>
+      <h2 class="section-title" id="products-heading">THE LINEUP</h2>
+
+      <div class="products-grid" role="list">
+
+        <article class="product-card" role="listitem" data-animate="fade-up" data-delay="0">
+          <a href="#" class="product-card-link">
+            <div class="product-card-image-wrap">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_MarioGalaxyCocoaCrunch_60g.png?v=1776111170&width=400"
+                   alt="Mario Galaxy Cocoa Crunch chocolate bar" loading="lazy" class="product-card-img">
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-title">MARIO GALAXY COCOA CRUNCH</p>
+              <p class="product-card-price">$2.99</p>
+            </div>
+          </a>
+          <button class="btn-primary product-atb" data-product="Mario Galaxy" aria-label="Add Mario Galaxy to bag">ADD TO BAG</button>
+        </article>
+
+        <article class="product-card" role="listitem" data-animate="fade-up" data-delay="80">
+          <a href="#" class="product-card-link">
+            <div class="product-card-image-wrap">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_CookiesCreme_60g_2.5.png?v=1778269980&width=400"
+                   alt="Cookies and Creme chocolate bar" loading="lazy" class="product-card-img">
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-title">COOKIES & CREME</p>
+              <p class="product-card-price">$2.99</p>
+            </div>
+          </a>
+          <button class="btn-primary product-atb" data-product="Cookies & Creme" aria-label="Add Cookies and Creme to bag">ADD TO BAG</button>
+        </article>
+
+        <article class="product-card" role="listitem" data-animate="fade-up" data-delay="160">
+          <a href="#" class="product-card-link">
+            <div class="product-card-image-wrap">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_Caramel_60g.png?v=1758826810&width=400"
+                   alt="Caramel Chocolate bar" loading="lazy" class="product-card-img">
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-title">CARAMEL</p>
+              <p class="product-card-price">$2.99</p>
+            </div>
+          </a>
+          <button class="btn-primary product-atb" data-product="Caramel" aria-label="Add Caramel to bag">ADD TO BAG</button>
+        </article>
+
+        <article class="product-card" role="listitem" data-animate="fade-up" data-delay="240">
+          <a href="#" class="product-card-link">
+            <div class="product-card-image-wrap">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_Milk_60g.png?v=1778265549&width=400"
+                   alt="Milk Chocolate bar" loading="lazy" class="product-card-img">
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-title">MILK CHOCOLATE</p>
+              <p class="product-card-price">$2.99</p>
+            </div>
+          </a>
+          <button class="btn-primary product-atb" data-product="Milk Chocolate" aria-label="Add Milk Chocolate to bag">ADD TO BAG</button>
+        </article>
+
+        <article class="product-card" role="listitem" data-animate="fade-up" data-delay="320">
+          <a href="#" class="product-card-link">
+            <div class="product-card-image-wrap">
+              <img src="https://feastables.com/cdn/shop/files/Chocolate_MilkCrunch_60g_2.5.png?v=1778268968&width=400"
+                   alt="Milk Crunch Chocolate bar" loading="lazy" class="product-card-img">
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-title">MILK CRUNCH</p>
+              <p class="product-card-price">$2.99</p>
+            </div>
+          </a>
+          <button class="btn-primary product-atb" data-product="Milk Crunch" aria-label="Add Milk Crunch to bag">ADD TO BAG</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOAST ── -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://feastables.com/cdn/shop/files/Feastables_Rebrand_Non_Tilted.png?v=1715198993&width=240"
+             alt="Feastables" width="180" loading="lazy">
+        <p class="footer-tagline">BOLDER FLAVOR. BIGGER PURPOSE.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP</h3>
+          <a href="#">Chocolate</a>
+          <a href="#">Snacks</a>
+          <a href="#">Bundles</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">COMPANY</h3>
+          <a href="#story">Our Story</a>
+          <a href="#mission">Mission</a>
+          <a href="dashboard.html">Brand Dashboard</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">FOLLOW</h3>
+          <a href="https://www.instagram.com/feastables" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://twitter.com/feastables" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+          <a href="https://www.tiktok.com/@feastables" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>220 North Green Street Suite 100, Chicago, IL 60607</p>
+      <p>© 2024 Feastables. Built with purpose.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

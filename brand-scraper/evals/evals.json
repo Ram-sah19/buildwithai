@@ -1,0 +1,23 @@
+{
+  "skill_name": "brand-scraper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Scrape the branding from https://stripe.com — I want the colors, fonts, button styles, and any interesting visual effects. I'm going to use this to build a similar-feeling payments site.",
+      "expected_output": "A brand_report.md containing: Stripe's primary/secondary colors (hex values), font families used, button styles (primary and secondary), spacing/border-radius values, and a CSS variables starter block. brand_data.json saved with raw structured data. At least the logo and OG image downloaded into images/.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Can you pull all the brand stuff from https://linear.app? I need colors, typography, any hero images or logos, and I specifically want to know what makes their UI look so clean — buttons, spacing, that kind of thing.",
+      "expected_output": "A brand_report.md with Linear's color palette (they use dark mode), font stacks, button styles, spacing information, and a section on visual effects/patterns. Downloaded images should include their logo and hero/OG images. The CSS starter block should reflect their design tokens.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm redesigning a client's website and want to research https://notion.so for design inspiration. Get me everything you can about their colors, fonts, images, and UI style.",
+      "expected_output": "A brand_report.md covering Notion's brand colors, typography (their custom font if detected, fallbacks), hero section content, primary/secondary CTAs, notable styling effects, and downloaded brand images. The report should include a section on brand personality and a CSS starter kit.",
+      "files": []
+    }
+  ]
+}

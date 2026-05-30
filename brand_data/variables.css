@@ -1,0 +1,172 @@
+/* ============================================================
+   FEASTABLES BRAND CSS VARIABLES
+   Source: https://feastables.com/pages/our-cocoa-story
+   Scraped: 2026-05-30
+   ============================================================ */
+
+/* Import Kanit from Google Fonts (closest available substitute) */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&display=swap');
+
+:root {
+  /* ── Colors ── */
+  --color-primary:         #67318F;   /* brand purple — announcement bar, accents */
+  --color-accent:          #15CCFF;   /* CTA cyan-blue — buttons, highlights */
+  --color-black:           #000000;   /* borders, text, structural outlines */
+  --color-off-white:       #FAF9F5;   /* card & page backgrounds */
+  --color-blue-cloud:      #D6E4F0;   /* product card image containers */
+  --color-white:           #FFFFFF;   /* pure white — modals, checkout bg */
+  --color-sidebar:         #F5F5F5;   /* light gray sidebar */
+  --color-error:           #FF0000;
+  --color-text:            #000000;   /* primary text */
+  --color-text-on-dark:    #FFFFFF;   /* text on purple / black */
+
+  /* ── Typography ── */
+  --font-heading:          'Kanit', 'Barlow Condensed', sans-serif;
+  --font-body:             'Kanit', sans-serif;
+  --font-display:          'Barlow Condensed', 'Kanit', sans-serif; /* DrukWide substitute */
+
+  --text-xs:               12px;
+  --text-sm:               14px;
+  --text-base:             16px;
+  --text-lg:               18px;
+  --text-xl:               20px;
+  --text-2xl:              24px;
+  --text-4xl:              36px;
+  --text-6xl:              60px;
+
+  /* ── Spacing ── */
+  --space-1:               4px;
+  --space-2:               8px;
+  --space-3:               12px;
+  --space-4:               16px;
+  --space-6:               24px;
+  --space-8:               32px;
+  --space-10:              40px;
+  --space-16:              64px;
+
+  /* ── Borders ── */
+  --border-width:          4px;
+  --border-width-thin:     2px;
+  --border:                4px solid #000000;
+  --border-thin:           2px solid #000000;
+  --border-radius-card:    0.75rem;   /* ~12px, rounded-xl */
+  --border-radius-modal:   0.75rem;
+  --border-radius-sm:      0.5rem;
+
+  /* ── Shadows ── */
+  --shadow-hard:           5px 6px 0 0 #000000;       /* hard offset, no blur */
+  --shadow-hard-sm:        3px 4px 0 0 #000000;
+  --shadow-hard-lg:        8px 10px 0 0 #000000;
+
+  /* ── Layout ── */
+  --nav-height:            75px;
+  --card-width:            200px;
+  --card-aspect:           1 / 0.75;
+
+  /* ── Transitions ── */
+  --transition-fast:       100ms ease-in;
+  --transition-nav:        500ms;
+
+  /* ── Background Texture ── */
+  --bg-texture:            url('https://feastables.com/cdn/shop/files/PaperTextureBg.jpg?v=1706141021&width=500');
+  --bg-texture-size:       500px 500px;
+
+  /* ── Announcement bar ── */
+  --announcement-bg:       #67318F;
+  --announcement-color:    #FFFFFF;
+  --announcement-size-mobile:  14px;
+  --announcement-size-desktop: 16px;
+  --announcement-padding-mobile:  8px 32px;
+  --announcement-padding-desktop: 6px 32px;
+}
+
+/* ── Apply paper texture ── */
+body,
+.page-bg {
+  background-image: var(--bg-texture);
+  background-repeat: repeat;
+  background-size: var(--bg-texture-size);
+}
+
+/* ── Product card ── */
+.card {
+  border: var(--border);
+  border-radius: var(--border-radius-card);
+  background: var(--color-off-white);
+  overflow: hidden;
+  transition: filter var(--transition-fast);
+}
+.card:hover {
+  filter: drop-shadow(var(--shadow-hard));
+}
+
+/* ── Hard shadow utility ── */
+.shadow-hard      { box-shadow: var(--shadow-hard); }
+.shadow-hard-sm   { box-shadow: var(--shadow-hard-sm); }
+.shadow-hard-lg   { box-shadow: var(--shadow-hard-lg); }
+
+/* ── Primary CTA button ── */
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-black);
+  border: var(--border);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: filter var(--transition-fast);
+}
+.btn-primary:hover {
+  filter: drop-shadow(var(--shadow-hard-sm));
+}
+
+/* ── Brand purple button ── */
+.btn-brand {
+  background: var(--color-primary);
+  color: var(--color-text-on-dark);
+  border: var(--border);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: filter var(--transition-fast);
+}
+.btn-brand:hover {
+  filter: drop-shadow(var(--shadow-hard-sm));
+}
+
+/* ── Display heading ── */
+.heading-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+/* ── Announcement bar ── */
+.announcement-bar {
+  background: var(--announcement-bg);
+  color: var(--announcement-color);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: var(--announcement-padding-mobile);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .announcement-bar {
+    font-size: var(--announcement-size-desktop);
+    padding: var(--announcement-padding-desktop);
+  }
+}
